@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\Nangkiew\CSS\faq.css">
+    <link rel="stylesheet" href="..\Nangkiew\CSS\nav-&-footer.css">
+    <link rel="stylesheet" href="..\Nangkiew\CSS\media.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a class="logo" href="..\Nangkiew\home.html"><img class="sizename" src="..\Nangkiew\Images\logo name.png"></a>
+            <div class="container">
+                <div class="pro">
+                    <a class="ga"><img class="sizesearch" src="..\Nangkiew\Images\search.png" alt="Search"></a>
+                    <a class="ga" href="..\Nangkiew\cart.html"><img class="sizecart" src="..\Nangkiew\Images\shopping-cart.png" ></a>
+                    <a class="ga"><img class="sizeprofile" src="..\Nangkiew\Images\user.png" alt="Profile"></a>
+                    <a class="ga menu-toggle"><img src="..\Nangkiew\Images\menu.png" class="sizemenu" alt="Menu" onclick="openNav()"></a>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">⨉</a>
+            <a href="..\Nangkiew\home.html">Home</a>
+            <a href="..\Nangkiew\contact.html">Contact</a>
+            <a href="..\Nangkiew\faq.html">FAQ</a>
+            <a href="..\Nangkiew\terms.html">Terms & conditions</a>
+            <a href="..\Nangkiew\login.html">Login</a>
+        </div>
+    </header>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <h2>What is your return policy?</h2>
+            <p>Our return policy allows returns within 30 days of purchase. Please ensure items are in original condition.</p>
+        </div>
+        <div class="faq-item">
+            <h2>Do you offer international shipping?</h2>
+            <p>Yes, we ship worldwide. Shipping costs may vary based on your location.</p>
+        </div>
+        <div class="faq-item">
+            <h2>How can I track my order?</h2>
+            <p>You can track your order using the tracking link provided in your order confirmation email.</p>
+        </div>
+    </div>
+    <script src="..\Nangkiew\Jscript\hamburger.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sec">
+                <h3 class="footer-title">Categories</h3>
+                <li><a href="..\Nangkiew\women.html">Women</a></li>
+                    <li><a href="..\Nangkiew\men.html">Men</a></li>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Help</h3>
+                <li><a href="..\Nangkiew\terms.html">Term & Condition</a></li>
+                <li><a href="..\Nangkiew\contact.html">Contact</a></li>
+                <li><a href="..\Nangkiew\faq.html">FAQs</a></li>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Get in Touch</h3>
+                <p>Any questions? Let us know</p>
+                <div class="pro">
+                    <a class="sc"><img class="sizeinstagram" src="..\Nangkiew\Images\instagram.png" alt="Instagram"></a>
+                    <a class="sc"><img class="sizetwitter" src="..\Nangkiew\Images\twitter.png" alt="Twitter"></a>
+                    <a class="sc"><img class="sizefacebook" src="..\Nangkiew\Images\facebook.png" alt="Facebook"></a>
+                    <a class="sc"><img class="sizegithub" src="..\Nangkiew\Images\github.png" alt="Github"></a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Newsletter</h3>
+                <input type="text" class="newsletter-input" placeholder="email@example.com" required size="21">
+                <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

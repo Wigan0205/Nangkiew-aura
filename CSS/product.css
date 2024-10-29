@@ -1,0 +1,121 @@
+/* Base styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Product Page */
+.product-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 40px;
+}
+
+/* Current Product Image */
+.current-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail Images */
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-images img {
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-images img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Details */
+.container-detail {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left; 
+}
+
+.product-details h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Size Selector */
+.size-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+}
+
+.size-selector button {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.size-selector button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* AddtoCart Button */
+.add-to-cart {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Typography */
+h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}

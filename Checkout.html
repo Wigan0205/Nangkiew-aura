@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="..\Nangkiew\CSS\nav-&-footer.css">
+    <link rel="stylesheet" href="../Nangkiew/CSS/checkout.css"> 
+    <link rel="stylesheet" href="..\Nangkiew\CSS\media.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="container">
+                <div class="pro">
+                    <a class="ga" href="../Nangkiew/cart.html"><img class="sizesearch" src="../Nangkiew/Images/back.png"></a>
+                </div>
+            </div>
+            <a class="logo" href="../Nangkiew/home.html"><img class="sizename" src="../Nangkiew/Images/logo name.png" alt="Nangkiew Logo"></a>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <section class="checkout-left">
+            <div class="form-step active"> 
+                <h2>1. Shipping</h2>
+                <p>Provide your shipping details at the next step.</p>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="Postal Code" required>
+                <button type="button" onclick="nextStep()">Next</button>
+            </div>
+
+            <div class="form-step"> 
+                <h2>2. Payment Method</h2>
+                <p>Select your payment method below:</p>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="credit_card" onclick="showCardFields()">
+                        Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="debit_card" onclick="showCardFields()">
+                        Debit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="UPI" onclick="showUPIFields()">
+                        UPI
+                    </label>
+                </div>
+            
+                <div id="cardFields" class="card-fields">
+                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Cardholder Name" required>
+                    <input type="text" placeholder="Expiry Date (MM/YY)" required>
+                    <input type="text" placeholder="CVV" required>
+                </div>
+                <div id="UPIFields" class="card-fields">
+                    <input type="text" placeholder="UPI ID" required>
+                </div>
+            
+                <button type="button" onclick="nextStep()">Next</button>
+            </div>
+            
+
+            <div class="form-step"> 
+                <h2>3. Confirm Order</h2>
+                <p>Click on place order to confirm order.</p>
+            </div>
+        </section>
+
+        <section class="checkout-right">
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <p>Complete your purchase by reviewing your order details below.</p>
+                <div class="cart-item">
+                    <img src="../nangkiew/images/item-cart-01.jpg" alt="T-Shirt">
+                    <div class="item-details">
+                        <p>T-Shirt</p>
+                        <p>$125</p>
+                    </div>
+                </div>
+
+                <div class="summary-item">
+                    <p>Subtotal:</p>
+                    <p>$8</p>
+                </div>
+                <div class="summary-item">
+                    <p>Shipping:</p>
+                    <p>Free</p>
+                </div>
+                <div class="summary-item">
+                    <p>GST:</p>
+                    <p>$2</p>
+                </div>
+                <div class="summary-item total">
+                    <p>Total:</p>
+                    <p>$10</p>
+                </div>
+
+                <button class="place-order-btn">Place Order</button>
+            </div>
+        </section>
+    </main>
+	<script src="..\Nangkiew\Jscript\hamburger.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sec">
+                <h3 class="footer-title">Categories</h3>
+                <ul>
+                    <li><a href="..\Nangkiew\women.html">Women</a></li>
+                    <li><a href="..\Nangkiew\men.html">Men</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-sec">
+                <h3 class="footer-title">Help</h3>
+                <li><a href="..\Nangkiew\terms.html">Term & Condition</a></li>
+                <li><a href="..\Nangkiew\contact.html">Contact</a></li>
+                <li><a href="..\Nangkiew\faq.html">FAQs</a></li>
+            </div>
+
+            <div class="footer-sec">
+                <h3 class="footer-title">Get in Touch</h3>
+                <p>Any questions? Let us know</p>
+                <div class="pro">
+                    <a class="sc" href="#"><img class="sizeinstagram" src="../Nangkiew/Images/instagram.png" alt="Instagram"></a>
+                    <a class="sc" href="#"><img class="sizetwitter" src="../Nangkiew/Images/twitter.png" alt="Twitter"></a>
+                    <a class="sc" href="#"><img class="sizefacebook" src="../Nangkiew/Images/facebook.png" alt="Facebook"></a>
+                    <a class="sc" href="#"><img class="sizegithub" src="../Nangkiew/Images/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <h3 class="footer-title">Newsletter</h3>
+                <input type="text" class="newsletter-input" placeholder="email@example.com" required>
+                <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="..\Nangkiew\Jscript\checkout.js"></script>
+
+</body>
+</html>

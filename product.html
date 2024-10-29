@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="..\Nangkiew\CSS\nav-&-footer.css">
+    <link rel="stylesheet" href="..\Nangkiew\CSS\product.css">
+    <link rel="stylesheet" href="..\Nangkiew\CSS\media.css">
+</head>
+	<header>
+        <div class="nav">
+            <a class="logo" href="..\Nangkiew\home.html"><img class="sizename" src="..\Nangkiew\Images\logo name.png" alt="Logo"></a>
+            <div class="container">
+                <div class="pro">
+                    <a class="ga"><img class="sizesearch" src="..\Nangkiew\Images\search.png" alt="Search"></a>
+                    <a class="ga" href="..\Nangkiew\cart.html"><img class="sizecart" src="..\Nangkiew\Images\shopping-cart.png" alt="Cart"></a>
+                    <a class="ga"><img class="sizeprofile" src="..\Nangkiew\Images\user.png" alt="Profile"></a>
+                    <a class="ga menu-toggle"><img src="..\Nangkiew\Images\menu.png" class="sizemenu" alt="Menu" onclick="openNav()"></a>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">⨉</a>
+            <a href="..\Nangkiew\home.html">Home</a>
+            <a href="..\Nangkiew\contact.html">Contact</a>
+            <a href="..\Nangkiew\faq.html">FAQ</a>
+            <a href="..\Nangkiew\terms.html">Terms & conditions</a>
+            <a href="..\Nangkiew\login.html">Login</a>
+        </div>
+    </header>
+<body>
+    <div class="product-page">
+        <div class="current-product">
+            <img src="images/women-01.jpg" alt="Leather Jacket" id="currentImage">
+        </div>
+        <div class="product-images">
+            <img src="images/women-01.jpg" alt="Product Image 1" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/women-02.jpg" alt="Product Image 2" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/women-03.jpg" alt="Product Image 3" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/women-04.jpg" alt="Product Image 4" class="thumbnail" onclick="changeImage(this)">
+            <img src="images/women-05.jpg" alt="Product Image 5" class="thumbnail" onclick="changeImage(this)">
+        </div>
+        <div class="container-detail">
+            <div class="product-details">
+                <h1>Leather Jacket</h1>
+                <p class="price">$5</p>
+            </div>
+
+            <h2>FIND YOUR SIZE</h2>
+            <div class="size-selector">
+                <button>28</button>
+                <button>30</button>
+                <button>32</button>
+                <button>34</button>
+                <button>36</button>
+                <button>40</button>
+            </div>
+
+            <button class="add-to-cart">ADD TO SHOPPING BAG</button>
+
+            <h2>DESCRIPTION</h2>
+            <p>This jacket is very stylish, made from 100% genuine leather, perfect for all occasions.</p>
+
+            <h2>DETAILS</h2>
+            <ul>
+                <li>Composition: 100% genuine leather</li>
+                <li>Made in Meghalaya</li>
+            </ul>
+
+            <h2>SHIPPING & RETURNS</h2>
+            <p>10 Days return policy.</p>
+        </div>
+    </div>
+	<script src="..\Nangkiew\Jscript\hamburger.js"></script>
+    <script>
+        function changeImage(thumbnail) {
+        const currentImage = document.getElementById('currentImage');
+        currentImage.src = thumbnail.src;
+}
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-sec">
+                <h3 class="footer-title">Categories</h3>
+                <ul>
+                    <li><a href="..\Nangkiew\women.html">Women</a></li>
+                    <li><a href="..\Nangkiew\men.html">Men</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Help</h3>
+                <li><a href="..\Nangkiew\terms.html">Term & Condition</a></li>
+                <li><a href="..\Nangkiew\contact.html">Contact</a></li>
+                <li><a href="..\Nangkiew\faq.html">FAQs</a></li>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Get in Touch</h3>
+                <p>Any questions? Let us know</p>
+                <div class="pro">
+                    <a class="sc"><img class="sizeinstagram" src="..\Nangkiew\Images\instagram.png" alt="Instagram"></a>
+                    <a class="sc"><img class="sizetwitter" src="..\Nangkiew\Images\twitter.png" alt="Twitter"></a>
+                    <a class="sc"><img class="sizefacebook" src="..\Nangkiew\Images\facebook.png" alt="Facebook"></a>
+                    <a class="sc"><img class="sizegithub" src="..\Nangkiew\Images\github.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="footer-sec">
+                <h3 class="footer-title">Newsletter</h3>
+                <input type="email" class="newsletter-input" placeholder="email@example.com" required size="21">
+                <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

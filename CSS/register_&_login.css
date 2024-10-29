@@ -1,0 +1,104 @@
+/* Auth Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding:20px;
+    margin-top:42px;
+    background-color: #f4f4f4;
+}
+
+/* Auth Form */
+.auth-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.captcha{
+	margin-bottom:10px;
+}
+.input-group input:focus {
+    border-color: #333;
+    outline: none;
+}
+.captchaText{
+	margin-top:10px;
+	margin-bottom:5px;
+	font-size: 20px;
+    color: #000000;
+}
+.input-group h3{
+	text-align:center;
+	margin-top:-10px;
+	margin-bottom:-10px;
+}
+/* Auth Button */
+.auth-btn {
+	margin-top:20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.refresh-btn{
+	background-color: #fff;
+	border: none;
+}
+.refresh-btn p{
+	margin:0;
+	font-size:20px;
+}
+.auth-btn:hover {
+    background-color: #555;
+}
+
+.auth-footer {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.auth-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
