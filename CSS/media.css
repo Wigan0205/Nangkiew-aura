@@ -113,6 +113,9 @@
     p {
         font-size: 14px;
     }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+      }
 }
 
 @media (max-width: 480px) {
@@ -155,4 +158,8 @@
         width: 70px;
         height: 80px;
     }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+        gap: 15px;
+      }
 }
