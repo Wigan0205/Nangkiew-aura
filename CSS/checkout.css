@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: #f6f6f6;
     font-family: Arial, sans-serif;
 }
@@ -6,7 +7,7 @@ body {
 .nav {
     position: relative;
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: #ffffff;
 }
 
@@ -16,15 +17,14 @@ body {
     left: 10px; 
 }
 .nav .logo {
-    margin-right:40vw;
+    margin-right: 50%;
     display: block;
 }
-
 .checkout-container {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
@@ -151,7 +151,7 @@ button:hover, .next-step-btn:hover {
 }
 
 .checkout-right {
-    width: 47%;
+    width: 45%;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;

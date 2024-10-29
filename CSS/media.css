@@ -39,7 +39,7 @@
     .faq-container,
     .terms-container,
     .contact-container {
-        width: 100%;
+        width: 90%;
         max-width: 700px;
         padding: 15px;
     }
@@ -68,7 +68,9 @@
         margin-bottom: 20px; 
     }
     .checkout-right{
-        width:65vw;
+        margin-right:auto;
+        margin-left:auto;
+        width:68vw;
     }
     .nav .logo {
         margin-right: 40%;
