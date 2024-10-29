@@ -3,13 +3,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.logo {
-    margin-right: 45%;
-    display: block;
+.nav {
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #ffffff;
 }
 
-.nav {
-    gap: 39%;
+.nav .pro {
+    top:15px;
+    position: absolute;
+    left: 10px; 
+}
+.nav .logo {
+    margin-right:40vw;
+    display: block;
 }
 
 .checkout-container {

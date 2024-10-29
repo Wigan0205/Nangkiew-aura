@@ -1,12 +1,9 @@
 /* Base media query for all pages */
 @media (max-width: 1200px) {
-    /* Adjust main container width for smaller desktops */
     .main-container {
         max-width: 1000px;
         margin: 0 20px;
     }
-
-    /* Reduce padding for containers */
     .auth-form,
     .container-detail,
     .faq-container,
@@ -14,8 +11,6 @@
     .contact-container {
         padding: 20px;
     }
-
-    /* Adjust font sizes */
     h1, h2 {
         font-size: 24px;
     }
@@ -30,12 +25,15 @@
 }
 
 @media (max-width: 992px) {
-    /* Tablet adjustments */
+    
+    .nav .logo {
+        margin-right: 45%;
+        display: block;
+    }
     .product-page {
         flex-direction: column;
         gap: 20px;
     }
-
     .auth-form,
     .container-detail,
     .faq-container,
@@ -45,14 +43,10 @@
         max-width: 700px;
         padding: 15px;
     }
-
-    /* Adjust thumbnail images */
     .product-images img {
         width: 80px;
         height: 90px;
     }
-
-    /* Adjust button sizes */
     .size-selector button {
         padding: 8px 16px;
     }
@@ -64,7 +58,54 @@
 }
 
 @media (max-width: 768px) {
-    /* Mobile adjustments */
+    .checkout-container {
+        flex-direction: column; 
+        margin: 20px; 
+    }
+
+    .checkout-left, .checkout-right {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+    .checkout-right{
+        width:65vw;
+    }
+    .nav .logo {
+        margin-right: 40%;
+        display: block;
+    }
+    .cart-container {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+    .cart-left, .cart-right {
+        padding: 15px; 
+    }
+    .carousel {
+        height: 60vh; 
+    }
+    .carousel .list .item .content {
+        top: 15%;
+        width: 80%;
+    }
+    .carousel .list .item .title,
+    .carousel .list .item .topic {
+        font-size: 2em; 
+    }
+    .arrows button {
+        width: 45px;
+        height: 45px;
+    }
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .footer-sec {
+        flex: 1 1 100%; 
+        margin: 15px 0;
+    }
     body {
         font-size: 16px;
     }
@@ -82,9 +123,7 @@
         overflow-x: auto;
         gap: 10px;
         padding-bottom: 10px;
-    }
-
-    /* Mobile-friendly buttons */
+    }   
     .size-selector {
         flex-wrap: wrap;
     }
@@ -93,15 +132,11 @@
         flex: 1 1 45%;
         margin: 5px 0;
     }
-
-    /* Full-width buttons */
     .auth-btn,
     .add-to-cart {
         width: 100%;
         margin-top: 15px;
     }
-
-    /* Adjust font sizes */
     h1, h2 {
         font-size: 20px;
     }
@@ -114,12 +149,33 @@
         font-size: 14px;
     }
     .product-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+        grid-template-columns: repeat(3, 1fr); 
       }
 }
 
 @media (max-width: 480px) {
-    /* Small mobile adjustments */
+    .nav .logo {
+        margin-right: 30%;
+        display: block;
+    }
+    .cart-container {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    .cart-left h2, .cart-right h2 {
+        font-size: 1.4rem;
+    }
+
+    .cart-item img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .checkout-button {
+        font-size: 14px;
+        padding: 12px;
+    }
     h1, h2 {
         font-size: 18px;
     }
@@ -131,8 +187,6 @@
     p {
         font-size: 12px;
     }
-
-    /* Stack layout changes */
     .product-page,
     .faq-container,
     .terms-container,
@@ -142,13 +196,10 @@
         padding: 5px;
     }
 
-    /* Smaller buttons */
     .size-selector button {
         flex: 1 1 100%;
         padding: 10px;
     }
-
-    /* Make images mobile-friendly */
     .current-product img {
         max-width: 100%;
         height: auto;
@@ -159,7 +210,36 @@
         height: 80px;
     }
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
       }
+      .footer-sec {
+        margin: 10px 0;
+    }
+    .footer-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .newsletter-input, .subscribe-button {
+        padding: 8px; 
+    }
+    .sc img {
+        width: 25px;
+        height: 25px;
+    }
+    .carousel {
+        height: 50vh;
+    }
+    .carousel .list .item .content {
+        top: 10%;
+        width: 95%;
+    }
+    .carousel .list .item .title,
+    .carousel .list .item .topic {
+        font-size: 1.5em;
+    }
+    .arrows button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
 }
